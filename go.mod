@@ -14,3 +14,8 @@ require golang.org/x/sync v0.1.0 // indirect
 
 // Personal fork - tracking upstream jackc/pgx for learning purposes.
 // Last synced with upstream: 2024-01
+//
+// Personal notes:
+// - Studying connection pool behavior (puddle/v2) and how MaxConns interacts
+//   with query cancellation. See internal/pool for experiments.
+// - TODO: explore pgconn tracing hooks for custom observability middleware.
