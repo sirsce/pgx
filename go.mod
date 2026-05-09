@@ -19,3 +19,6 @@ require golang.org/x/sync v0.1.0 // indirect
 // - Studying connection pool behavior (puddle/v2) and how MaxConns interacts
 //   with query cancellation. See internal/pool for experiments.
 // - TODO: explore pgconn tracing hooks for custom observability middleware.
+// - TODO: experiment with pgconn ConnectConfig timeout defaults; upstream uses
+//   30s connect timeout but I want to test shorter values (5s) for fast-fail
+//   behavior in microservice environments.
