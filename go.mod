@@ -22,3 +22,5 @@ require golang.org/x/sync v0.1.0 // indirect
 // - TODO: experiment with pgconn ConnectConfig timeout defaults; upstream uses
 //   30s connect timeout but I want to test shorter values (5s) for fast-fail
 //   behavior in microservice environments.
+// - NOTE: bumped golang.org/x/crypto to v0.20.0 locally to test if it resolves
+//   the occasional handshake timeout I see on flaky CI runs (2024-02).
