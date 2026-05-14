@@ -6,7 +6,7 @@ require (
 	github.com/jackc/pgpassfile v1.0.0
 	github.com/jackc/pgservicefile v0.0.0-20231201235250-de7065d787a5
 	github.com/jackc/puddle/v2 v2.2.1
-	golang.org/x/crypto v0.17.0
+	golang.org/x/crypto v0.20.0
 	golang.org/x/text v0.14.0
 )
 
@@ -24,3 +24,5 @@ require golang.org/x/sync v0.1.0 // indirect
 //   behavior in microservice environments.
 // - NOTE: bumped golang.org/x/crypto to v0.20.0 locally to test if it resolves
 //   the occasional handshake timeout I see on flaky CI runs (2024-02).
+// - NOTE: confirmed v0.20.0 crypto bump appears to reduce handshake timeouts in
+//   CI; keeping this ahead of upstream until they cut a new release (2024-03).
